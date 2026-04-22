@@ -4,12 +4,12 @@
 // ==============================
 // WIFI CONFIG
 // ==============================
-const char* ssid = "YOUR_WIFI_NAME";
-const char* password = "YOUR_WIFI_PASSWORD";
+const char* ssid = "YOUR_WIFI_NAME";           // give some user name eg: sk510
+const char* password = "YOUR_WIFI_PASSWORD";   // some password: 05102004
 
-// Flask server IP (laptop hotspot / same network)
-const char* serverURL = "http://192.168.1.10:5000/data";
-
+// Flask server IP (laptop hotspot / same network) ------------------------------
+const char* serverURL = "http://192.168.1.10:5000/data";   // cmd- ipconfig -> ipv4 address put here dood...
+//---------------------------------------------------------// instead of this  192.168.1.10 --................
 // ==============================
 // SENSOR PINS
 // ==============================
