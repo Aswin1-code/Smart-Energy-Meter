@@ -5,16 +5,16 @@
 // WiFi Credentials
 // ==============================
 
-const char* ssid = "YOUR_WIFI_NAME";
-const char* password = "YOUR_WIFI_PASSWORD";
+const char* ssid = "YOUR_WIFI_NAME";                      //fix some name , dood eg: sk510
+const char* password = "YOUR_WIFI_PASSWORD";              //some password,  eg: 05102004
 
 // ==============================
 // FLASK SERVER (IMPORTANT FIX)
 // ==============================
 // Replace with your laptop IP running Flask
-
-const char* serverURL = "http://192.168.1.10:5000/data";
-
+//==----------------------------------------------------==========------------------------------------
+const char* serverURL = "http://192.168.1.10:5000/data";       // ipconfig  --- ipv4 address .. replace
+//-----------==========================-----------------------------------============================
 void setup() {
   Serial.begin(115200);
 

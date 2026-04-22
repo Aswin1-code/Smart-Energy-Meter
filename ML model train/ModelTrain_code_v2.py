@@ -11,7 +11,7 @@ import joblib
 # ==============================
 # 1. LOAD DATASET
 # ==============================
-df = pd.read_csv(r"E:\pendrive\code\Smart Energy meter\Smart-Energy-Meter\final\dataset\energyDataset.csv")
+df = pd.read_csv(r"E:\pendrive\code\Smart Energy meter\Smart-Energy-Meter\Dataset\energyDataset.csv")
 
 print("✅ Dataset Loaded")
 print(df.head())

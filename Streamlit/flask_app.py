@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify
 from datetime import datetime
-import threading
+from flask_cors import CORS   # ✅ ADDED
 
 app = Flask(__name__)
+CORS(app)  # ✅ ADDED (allows Streamlit/browser access)
 
 # ==============================
 # GLOBAL STORAGE (LATEST DATA)
@@ -20,7 +21,10 @@ latest_data = {
 def receive_data():
     global latest_data
 
-    data = request.json
+    data = request.get_json()  # ✅ safer than request.json
+
+    if not data:
+        return jsonify({"status": "failed", "reason": "no data"}), 400
 
     latest_data = {
         "power": data.get("power", 0),
